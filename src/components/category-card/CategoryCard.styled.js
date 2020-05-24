@@ -12,6 +12,14 @@ position: relative;
     background-color: red;
     color: yellow;
   }
+  &:active {
+    background-color: red;
+    color: yellow;
+  }
+  &:focus {
+    background-color: red;
+    color: yellow;
+  }
 
   img {
       margin-top: 5px;

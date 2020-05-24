@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerCategory = styled.div`
+  overflow-y: scroll;
   width: 25vw;
   margin-top: auto;
   margin-bottom: auto;

@@ -2,6 +2,8 @@
     {
         "id": "4",
         "name": "Menu Maxi Best Of",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "maxi.jpg",
         "cat": "Populars"
@@ -9,6 +11,8 @@
     {
         "id": "4",
         "name": "Menu Filet o'Fish",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "fish-menu.png",
         "cat": "Populars"
@@ -16,6 +20,8 @@
     {
         "id": "3",
         "name": "Nuggets",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "3.0",
         "icon": "nuggets.png",
         "cat": "Populars"
@@ -23,6 +29,7 @@
     {
         "id": "3",
         "name": "Coca",
+        "description": "33cl.",
         "price": "3.0",
         "icon": "coca.png",
         "cat": "Populars"
@@ -30,6 +37,8 @@
     {
         "id": "1",
         "name": "Happy Meal",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "10.5",
         "icon": "happy.png",
         "cat": "Menus"
@@ -37,6 +46,8 @@
     {
         "id": "4",
         "name": "Filet o'Fish",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "fish-menu.png",
         "cat": "Menus"
@@ -44,6 +55,8 @@
     {
         "id": "4",
         "name": "Mc First",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "mcfirst.png",
         "cat": "Menus"
@@ -51,6 +64,8 @@
     {
         "id": "4",
         "name": "Best Of",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "bestof.png",
         "cat": "Menus"
@@ -58,6 +73,8 @@
     {
         "id": "4",
         "name": "Maxi Best Of",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "maxi.jpg",
         "cat": "Menus"
@@ -65,6 +82,8 @@
     {
         "id": "4",
         "name": "Salade",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "11.5",
         "icon": "menusalade.png",
         "cat": "Menus"
@@ -72,6 +91,8 @@
     {
         "id": "2",
         "name": "Filet o'fish",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "filet.png",
         "cat": "Burgers"
@@ -79,6 +100,8 @@
     {
         "id": "2",
         "name": "Big Mac",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "bigmac.png",
         "cat": "Burgers"
@@ -86,6 +109,8 @@
     {
         "id": "2",
         "name": "Big Tasty",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "bigtasty.jpg",
         "cat": "Burgers"
@@ -93,6 +118,8 @@
     {
         "id": "2",
         "name": "Chicago",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "chicago.png",
         "cat": "Burgers"
@@ -100,6 +127,8 @@
     {
         "id": "2",
         "name": "Double Spicy",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "doublespicy.png",
         "cat": "Burgers"
@@ -107,6 +136,8 @@
     {
         "id": "2",
         "name": "Cheeseburger",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "cheeseburger.png",
         "cat": "Burgers"
@@ -114,6 +145,8 @@
     {
         "id": "2",
         "name": "280 Original",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "280.png",
         "cat": "Burgers"
@@ -121,6 +154,8 @@
     {
         "id": "2",
         "name": "Mc Chicken",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "mcchicken.png",
         "cat": "Burgers"
@@ -128,6 +163,8 @@
     {
         "id": "2",
         "name": "Royal Cheese",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "royal.png",
         "cat": "Burgers"
@@ -135,6 +172,8 @@
     {
         "id": "2",
         "name": "Chicken BBQ",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "bbq.png",
         "cat": "Burgers"
@@ -142,6 +181,8 @@
     {
         "id": "2",
         "name": "CBO",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "8.0",
         "icon": "cbo.png",
         "cat": "Burgers"
@@ -149,6 +190,8 @@
     {
         "id": "3",
         "name": "Frites",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "3.0",
         "icon": "frites.png",
         "cat": "Extras"
@@ -156,6 +199,8 @@
     {
         "id": "3",
         "name": "Nuggets",
+        "description": "Box of 6 homemade chicken nuggets",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour",
         "price": "3.0",
         "icon": "nuggets.png",
         "cat": "Extras"
@@ -163,6 +208,8 @@
     {
         "id": "3",
         "name": "Chicken Wings",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "3.0",
         "icon": "wings.png",
         "cat": "Extras"
@@ -170,6 +217,8 @@
     {
         "id": "3",
         "name": "Potatoes",
+        "description": "Box of 6 homemade chicken nuggets.",
+        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
         "price": "3.0",
         "icon": "potatoes.png",
         "cat": "Extras"
@@ -177,6 +226,7 @@
     {
         "id": "3",
         "name": "Coca",
+        "description": "33cl.",
         "price": "3.0",
         "icon": "coca.png",
         "cat": "Drinks"
@@ -184,6 +234,7 @@
     {
         "id": "3",
         "name": "Sprite",
+        "description": "33cl.",
         "price": "3.0",
         "icon": "sprite.png",
         "cat": "Drinks"
@@ -191,6 +242,7 @@
     {
         "id": "3",
         "name": "Fanta",
+        "description": "33cl.",
         "price": "3.0",
         "icon": "fanta.png",
         "cat": "Drinks"
@@ -198,6 +250,7 @@
     {
         "id": "3",
         "name": "Evian",
+        "description": "33cl.",
         "price": "3.0",
         "icon": "evian.png",
         "cat": "Drinks"
