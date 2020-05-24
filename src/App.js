@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/navbar/Navbar";
+import CategoryProduct from "./components/category-product/CategoryProduct";
+import CardContainer from "./components/card-container/CardContainer";
 
 function App() {
+
+  const [category, setCategory] = React.useState("Populars")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div style={{ display: "flex" }}>
+        <div style={{ position: "absolute", left: "10px", marginTop: "30px" }}>
+          <CardContainer category={category} />
+        </div>
+        <div style={{ position: "absolute", right: "10px" }}>
+          <CategoryProduct setCategory={setCategory} />
+        </div>
+      </div>
     </div>
   );
 }
