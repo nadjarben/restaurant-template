@@ -5,7 +5,7 @@ export const StyledCard = styled.div`
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
-  background-color: #DA291C;
+  background-color: #FFC72C;
   border-radius: 10px;
   height: 100px;
   color: white;
@@ -13,6 +13,6 @@ export const StyledCard = styled.div`
   h5 {
   text-align: center;
   margin-top: 15px;
-  color: #FFC72C;
+  color: #DA291C;
   }
 `;

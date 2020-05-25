@@ -32,10 +32,15 @@ function ModalContact(props) {
     url = "https://amazing-poincare-3f19ef.netlify.app";
   }
 
+  const addProductToCart = () => {
+    const { d, checkout } = props
+    props.setCheckout([...checkout, d])
+    handleClose();
+  }
   return (
     <div>
       <div onClick={handleClickOpen}>
-        <CardProduct title={props.name} icon={`${url}/${props.icon}`} />
+        <CardProduct title={props.d.name} icon={`${url}/${props.d.icon}`} />
       </div>
       <Dialog
         open={open}
@@ -70,7 +75,7 @@ function ModalContact(props) {
               <CloseIcon />
             </IconButton>
           </div>
-          <DialogTitle id="form-dialog-title">{props.name}</DialogTitle>
+          <DialogTitle id="form-dialog-title">{props.d.name}</DialogTitle>
         </div>
         <DialogContent>
           <div
@@ -81,8 +86,8 @@ function ModalContact(props) {
             }}
           >
             <img
-              src={`${url}/${props.icon}`}
-              alt={props.name}
+              src={`${url}/${props.d.icon}`}
+              alt={props.d.name}
               width="280px"
               height="200px"
             />
@@ -92,25 +97,25 @@ function ModalContact(props) {
           <IconButton
             edge="start"
             color="inherit"
-            onClick={handleClose}
+            onClick={addProductToCart}
             aria-label="close"
           >
-            <AddCircleOutlineIcon />
+            <AddCircleOutlineIcon fontSize="large" />
           </IconButton>
           </div>
 
-          <Divider style={{ marginTop: "1vh" }} />
+          <Divider style={{ marginTop: "1vh", marginBottom: '1vh' }} />
 
           <div style={{ paddingBottom: "20px" }}>
             <div style={{ display: "flex" }}>
               <span style={{ fontWeight: "bold" }}>Description:</span>
-              <span style={{ paddingLeft: "8px" }}>{props.description}</span>
+              <span style={{ paddingLeft: "8px" }}>{props.d.description}</span>
             </div>
             <br />
-            {props.ingredients && (
+            {props.d.ingredients && (
               <div style={{ display: "flex" }}>
                 <span style={{ fontWeight: "bold" }}>Ingredient:</span>
-                <span style={{ paddingLeft: "8px" }}>{props.ingredients}</span>
+                <span style={{ paddingLeft: "8px" }}>{props.d.ingredients}</span>
               </div>
             )}
           </div>

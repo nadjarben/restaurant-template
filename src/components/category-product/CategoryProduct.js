@@ -19,7 +19,7 @@ const CategoryProduct = ({ setCategory }) => {
     return (
         <div>
             <ContainerCategory>
-            <CardTotal />
+            <CardTotal setCategory={setCategory} onClick={() => setCategory("Panier")} />
             <Divider light  style={{marginTop: '5px', marginBottom: '5px'}} />
             {data.map((d, id) => (
               <div key={id} onClick={() => setCategory(d.name)}>

@@ -3,11 +3,11 @@ import { StyledCard } from "./CardTotal.styled";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import IconButton from "@material-ui/core/IconButton";
 
-const CategoryCard = ({ title, icon }) => {
+const CategoryCard = ({ setCategory }) => {
   return (
-    <StyledCard>
+    <StyledCard onClick={() => setCategory("Panier")}>
       <IconButton style={{marginLeft: 'auto'}} edge="start" color="inherit" aria-label="close">
-        <ShoppingCartIcon style={{color: '#FFC72C'}} fontSize="large" />
+        <ShoppingCartIcon style={{color: '#DA291C'}} fontSize="large" />
       </IconButton>
 
       <h5>Panier</h5>

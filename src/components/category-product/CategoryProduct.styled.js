@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerCategory = styled.div`
-  overflow-y: scroll;
-  width: 25vw;
+top: 12vh;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;  width: 25vw;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;

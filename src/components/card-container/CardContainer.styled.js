@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledDiv = styled.div`
   width: auto;
+  min-width: 62vw;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto auto;
