@@ -13,7 +13,7 @@ function App() {
         <div style={{ position: "absolute", left: "10px", marginTop: "30px" }}>
           <CardContainer category={category} />
         </div>
-        <div style={{ position: "absolute", right: "10px" }}>
+      <div style={{ position: "fixed", right: '27vw' }}>
           <CategoryProduct setCategory={setCategory} />
         </div>
       </div>

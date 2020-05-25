@@ -6,6 +6,7 @@ export const ContainerCategory = styled.div`
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
+  position: fixed;
 `;
 
 export const TitleCategory = styled.h3`

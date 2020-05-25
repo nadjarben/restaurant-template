@@ -5,7 +5,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import Divider from '@material-ui/core/Divider';
+import Divider from "@material-ui/core/Divider";
 
 import CardProduct from "../card-product/CardProduct";
 
@@ -38,6 +38,8 @@ function ModalContact(props) {
       </div>
       <Dialog
         open={open}
+        fullWidth={true}
+        maxWidth={"md"}
         onClose={handleClose}
         TransitionComponent={Transition}
         aria-labelledby="form-dialog-title"
@@ -53,11 +55,11 @@ function ModalContact(props) {
             display: "flex",
             justifyContent: "center",
             alignItems: "cent",
-            backgroundColor: 'red',
-            color: 'yellow'
+            backgroundColor: "red",
+            color: "yellow",
           }}
         >
-          <div style={{ position: "absolute", left: "7px", top: "7px" }}>
+          <div style={{ position: "absolute", left: "10px", top: "7px" }}>
             <IconButton
               edge="start"
               color="inherit"
@@ -71,30 +73,38 @@ function ModalContact(props) {
         </div>
         <br />
         <DialogContent>
-          <img
-            src={`${url}/${props.icon}`}
-            alt={props.name}
-            width="300px"
-            height="200px"
-          />
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={`${url}/${props.icon}`}
+              alt={props.name}
+              width="280px"
+              height="200px"
+            />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
           <Divider />
           <br />
 
-          <div style={{paddingBottom: '20px'}}>
-            <div style={{display: 'flex'}}>
+          <div style={{ paddingBottom: "20px" }}>
+            <div style={{ display: "flex" }}>
               <span style={{ fontWeight: "bold" }}>Description:</span>
-              <span style={{paddingLeft: '8px'}}>{props.description}</span>
+              <span style={{ paddingLeft: "8px" }}>{props.description}</span>
             </div>
             <br />
             {props.ingredients && (
-              <div style={{display: 'flex'}}>
+              <div style={{ display: "flex" }}>
                 <span style={{ fontWeight: "bold" }}>Ingredient:</span>
-                <span style={{paddingLeft: '8px'}}>{props.ingredients}</span>
+                <span style={{ paddingLeft: "8px" }}>{props.ingredients}</span>
               </div>
             )}
           </div>

@@ -24,6 +24,10 @@ const CategoryProduct = ({ setCategory }) => {
               </div>
             ))}
             </ContainerCategory>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }
