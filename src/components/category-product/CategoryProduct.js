@@ -7,7 +7,7 @@ import CategoryCard from '../category-card/CategoryCard';
 import CardTotal from "../card-total/CardTotal";
 import data from '../../category.json';
 
-const CategoryProduct = ({ setCategory }) => {
+const CategoryProduct = ({ setCategory, checkout }) => {
 
     let url;
   if (process.env.NODE_ENV === "development") {
@@ -19,7 +19,9 @@ const CategoryProduct = ({ setCategory }) => {
     return (
         <div>
             <ContainerCategory>
-            <CardTotal setCategory={setCategory} onClick={() => setCategory("Panier")} />
+              <div onClick={() => setCategory("Panier")}>
+            <CardTotal checkout={checkout} />
+            </div>
             <Divider light  style={{marginTop: '5px', marginBottom: '5px'}} />
             {data.map((d, id) => (
               <div key={id} onClick={() => setCategory(d.name)}>

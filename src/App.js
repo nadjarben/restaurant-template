@@ -16,7 +16,7 @@ function App() {
           <CardContainer category={category} checkout={checkout} setCheckout={setCheckout} />
         </div>
       <div style={{ position: "fixed", right: '27vw' }}>
-          <CategoryProduct setCategory={setCategory} />
+          <CategoryProduct setCategory={setCategory} checkout={checkout} />
         </div>
       </div>
     </div>

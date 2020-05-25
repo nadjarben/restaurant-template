@@ -40,7 +40,7 @@ function ModalContact(props) {
   return (
     <div>
       <div onClick={handleClickOpen}>
-        <CardProduct title={props.d.name} icon={`${url}/${props.d.icon}`} />
+        <CardProduct title={props.d.name} icon={`${url}/${props.d.icon}`} price={props.d.price} />
       </div>
       <Dialog
         open={open}
@@ -106,7 +106,7 @@ function ModalContact(props) {
 
           <Divider style={{ marginTop: "1vh", marginBottom: '1vh' }} />
 
-          <div style={{ paddingBottom: "20px" }}>
+          <div style={{ paddingBottom: "20px", paddingLeft: '-1.5vw' }}>
             <div style={{ display: "flex" }}>
               <span style={{ fontWeight: "bold" }}>Description:</span>
               <span style={{ paddingLeft: "8px" }}>{props.d.description}</span>
@@ -118,6 +118,10 @@ function ModalContact(props) {
                 <span style={{ paddingLeft: "8px" }}>{props.d.ingredients}</span>
               </div>
             )}
+            <div style={{ display: "flex", marginTop: '1vh' }}>
+                <span style={{ fontWeight: "bold" }}>Price:</span>
+                <span style={{ paddingLeft: "8px" }}>₪{props.d.price}</span>
+              </div>
           </div>
         </DialogContent>
       </Dialog>
