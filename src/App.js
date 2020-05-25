@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar />
       <div style={{ display: "flex" }}>
-        <div style={{ position: "absolute", left: "10px", marginTop: "30px" }}>
+        <div style={{ position: "absolute", left: "10px", marginTop: "0px" }}>
           <CardContainer category={category} />
         </div>
       <div style={{ position: "fixed", right: '27vw' }}>

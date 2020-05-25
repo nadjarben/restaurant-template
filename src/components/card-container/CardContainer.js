@@ -22,6 +22,7 @@ const CardContainer = ({ category }) => {
             />
           ))}
       </StyledDiv>
+      <br />
     </div>
   );
 };

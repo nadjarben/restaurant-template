@@ -5,6 +5,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
+import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import Divider from "@material-ui/core/Divider";
 
 import CardProduct from "../card-product/CardProduct";
@@ -45,7 +46,7 @@ function ModalContact(props) {
         aria-labelledby="form-dialog-title"
         BackdropProps={{
           style: {
-            backgroundColor: "red",
+            backgroundColor: "#DA291C",
             opacity: "0.2",
           },
         }}
@@ -55,11 +56,11 @@ function ModalContact(props) {
             display: "flex",
             justifyContent: "center",
             alignItems: "cent",
-            backgroundColor: "red",
-            color: "yellow",
+            backgroundColor: "#DA291C",
+            color: "#FFC72C",
           }}
         >
-          <div style={{ position: "absolute", left: "10px", top: "7px" }}>
+          <div style={{ position: "absolute", left: "15px", top: "7px" }}>
             <IconButton
               edge="start"
               color="inherit"
@@ -71,7 +72,6 @@ function ModalContact(props) {
           </div>
           <DialogTitle id="form-dialog-title">{props.name}</DialogTitle>
         </div>
-        <br />
         <DialogContent>
           <div
             style={{
@@ -86,14 +86,20 @@ function ModalContact(props) {
               width="280px"
               height="200px"
             />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
-          <Divider />
-          <br />
+          <Divider style={{ marginTop: "3vh", marginBottom: "1vh" }} />
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 'auto'}}>
+          <IconButton
+            edge="start"
+            color="inherit"
+            onClick={handleClose}
+            aria-label="close"
+          >
+            <AddCircleOutlineIcon />
+          </IconButton>
+          </div>
+
+          <Divider style={{ marginTop: "1vh" }} />
 
           <div style={{ paddingBottom: "20px" }}>
             <div style={{ display: "flex" }}>

@@ -1,7 +1,10 @@
 import React from 'react'
-import { ContainerCategory, TitleCategory } from './CategoryProduct.styled'
+import { ContainerCategory } from './CategoryProduct.styled'
+import Divider from "@material-ui/core/Divider";
+
 
 import CategoryCard from '../category-card/CategoryCard';
+import CardTotal from "../card-total/CardTotal";
 import data from '../../category.json';
 
 const CategoryProduct = ({ setCategory }) => {
@@ -16,7 +19,8 @@ const CategoryProduct = ({ setCategory }) => {
     return (
         <div>
             <ContainerCategory>
-            <TitleCategory>Categories</TitleCategory>
+            <CardTotal />
+            <Divider light  style={{marginTop: '5px', marginBottom: '5px'}} />
             {data.map((d, id) => (
               <div key={id} onClick={() => setCategory(d.name)}>
                   <CategoryCard title={d.name} icon={`${url}/${d.icon}`} />

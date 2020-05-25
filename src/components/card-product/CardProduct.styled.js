@@ -9,16 +9,16 @@ export const StyledCard = styled.div`
   border-radius: 10px;
   height: 100px;
   &:hover {
-    background-color: red;
-    color: yellow;
+    background-color: #DA291C;
+    color: #FFC72C;
   }
   &:active {
-    background-color: red;
-    color: yellow;
+    background-color: #DA291C;
+    color: #FFC72C;
   }
   &:focus {
-    background-color: red;
-    color: yellow;
+    background-color: #DA291C;
+    color: #FFC72C;
   }
 
   img {
