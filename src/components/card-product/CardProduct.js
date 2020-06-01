@@ -8,7 +8,7 @@ const CardProduct = ({title, icon, price}) => {
       <img src={icon} alt={icon} width="80%"  />
       <div>
       <h5>{title}</h5>
-      <p>{price} €</p>
+      <p>{price.toFixed(2)} €</p>
       </div>
     </StyledCard>
   );

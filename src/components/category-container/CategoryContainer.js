@@ -2,7 +2,6 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeCategory } from "../../redux/actions/category.action";
 import { ContainerCategory } from "./CategoryContainerstyled";
-import Divider from "@material-ui/core/Divider";
 
 import CategoryCard from "../category-card/CategoryCard";
 
@@ -20,7 +19,6 @@ const CategoryContainer = () => {
   return (
     <div>
       <ContainerCategory>
-        <Divider light style={{ marginTop: "5px", marginBottom: "5px" }} />
         {categories.map((d, id) => (
           <div key={id} onClick={() => dispatch(changeCategory(d.name))}>
             <CategoryCard title={d.name} icon={`${url}/${d.icon}`} />

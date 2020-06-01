@@ -6,7 +6,7 @@ import CategoryContainer from "./components/category-container/CategoryContainer
 import CardContainer from "./components/card-container/CardContainer";
 
 function App() {
-  const [category, setCategory] = React.useState("Populaires");
+  const [category] = React.useState("Populaires");
   const [checkout, setCheckout] = React.useState([]);
 
   return (
@@ -20,7 +20,7 @@ function App() {
         />
       </div>
       <div style={{ position: "fixed", right: "27vw" }}>
-        <CategoryContainer setCategory={setCategory} checkout={checkout} />
+        <CategoryContainer />
       </div>
     </Provider>
   );

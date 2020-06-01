@@ -114,7 +114,7 @@ function ModalContact(props) {
                 fontWeight: "bold"
               }}
             >
-              {props.d.price} €
+              {props.d.price.toFixed(2)} €
             </div>
           </div>
         </DialogContent>

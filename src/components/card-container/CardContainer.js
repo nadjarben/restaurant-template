@@ -5,7 +5,6 @@ import { StyledDiv, TitleCategory } from "./CardContainer.styled";
 import ModalProduct from "../modal-product/ModalProduct";
 import CardProductInTotal from "../card-product/CardProductInTotal";
 
-
 const CardContainer = ({ checkout, setCheckout }) => {
   const category = useSelector((state) => state.category.category);
   const products = useSelector((state) => state.product.products);

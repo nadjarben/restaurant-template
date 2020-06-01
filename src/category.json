@@ -6,9 +6,9 @@
         "active": true
     },
     {
-        "id": "2",
-        "name": "Poulet",
-        "icon": "starter-wings.webp",
+        "id": "3",
+        "name": "Salades",
+        "icon": "salade-cesar.webp",
         "active": false
     },
     {
@@ -16,5 +16,18 @@
         "name": "Pizzas",
         "icon": "margarita.webp",
         "active": false
+    },
+    {
+        "id": "2",
+        "name": "Poulet",
+        "icon": "starter-wings.webp",
+        "active": false
+    },
+    {
+        "id": "3",
+        "name": "Pains",
+        "icon": "bread-garlic.webp",
+        "active": false
     }
+
 ]
