@@ -10,15 +10,15 @@ position: relative;
   height: 100px;
   &:hover {
     background-color: #DA291C;
-    color: #FFC72C;
+    color: white;
   }
   &:active {
     background-color: #DA291C;
-    color: #FFC72C;
+    color: white;
   }
   &:focus {
     background-color: #DA291C;
-    color: #FFC72C;
+    color: white;
   }
 
   img {

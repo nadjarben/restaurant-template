@@ -11,15 +11,15 @@ export const StyledCard = styled.div`
   position: relative;
   &:hover {
     background-color: #da291c;
-    color: #ffc72c;
+    color: white;
   }
   &:active {
     background-color: #da291c;
-    color: #ffc72c;
+    color: white;
   }
   &:focus {
     background-color: #da291c;
-    color: #ffc72c;
+    color: white;
   }
 
   img {

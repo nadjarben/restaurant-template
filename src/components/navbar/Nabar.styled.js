@@ -6,9 +6,9 @@ export const NavbarStyled = styled.header`
 `;
 
 export const LogoStyled = styled.img`
-  margin-left: 30px;
+  margin-left: 20px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 `;

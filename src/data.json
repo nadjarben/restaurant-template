@@ -1,258 +1,75 @@
 [
     {
-        "id": "4",
-        "name": "Menu Maxi Best Of",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "maxi.jpg",
-        "cat": "Populars"
-    },
-    {
-        "id": "4",
-        "name": "Menu Filet o'Fish",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "fish-menu.png",
-        "cat": "Populars"
-    },
-    {
-        "id": "3",
-        "name": "Nuggets",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 3.0,
-        "icon": "nuggets.png",
-        "cat": "Populars"
-    },
-    {
-        "id": "3",
-        "name": "Coca",
-        "description": "33cl.",
-        "price": 3.0,
-        "icon": "coca.png",
-        "cat": "Populars"
-    },
-    {
-        "id": "1",
-        "name": "Happy Meal",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 10.5,
-        "icon": "happy.png",
-        "cat": "Menus"
-    },
-    {
-        "id": "4",
-        "name": "Filet o'Fish",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "fish-menu.png",
-        "cat": "Menus"
-    },
-    {
-        "id": "4",
-        "name": "Mc First",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "mcfirst.png",
-        "cat": "Menus"
-    },
-    {
-        "id": "4",
-        "name": "Best Of",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "bestof.png",
-        "cat": "Menus"
-    },
-    {
-        "id": "4",
-        "name": "Maxi Best Of",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "maxi.jpg",
-        "cat": "Menus"
-    },
-    {
-        "id": "4",
-        "name": "Salade",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 11.5,
-        "icon": "menusalade.png",
-        "cat": "Menus"
-    },
-    {
-        "id": "2",
-        "name": "Filet o'fish",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "filet.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Big Mac",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "bigmac.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Big Tasty",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "bigtasty.jpg",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Chicago",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "chicago.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Double Spicy",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "doublespicy.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Cheeseburger",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "cheeseburger.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "280 Original",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "280.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Mc Chicken",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "mcchicken.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Royal Cheese",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "royal.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "Chicken BBQ",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "bbq.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "2",
-        "name": "CBO",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 8.0,
-        "icon": "cbo.png",
-        "cat": "Burgers"
-    },
-    {
-        "id": "3",
-        "name": "Frites",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 3.0,
-        "icon": "frites.png",
-        "cat": "Extras"
-    },
-    {
-        "id": "3",
-        "name": "Nuggets",
-        "description": "Box of 6 homemade chicken nuggets",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour",
-        "price": 3.0,
-        "icon": "nuggets.png",
-        "cat": "Extras"
-    },
-    {
         "id": "3",
         "name": "Chicken Wings",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 3.0,
-        "icon": "wings.png",
-        "cat": "Extras"
+        "description": "Classique ou croustillant pané? Doux ou chaud? C'est une situation aile-aile! (Désolé.) Nos ailes de signature proviennent de fermes canadiennes, de poulets élevés sans utilisation d'antibiotiques. Associez-les simplement avec votre sauce préférée",
+        "price": 6.9,
+        "icon": "starter-wings.webp",
+        "cat": "Poulet"
     },
     {
         "id": "3",
-        "name": "Potatoes",
-        "description": "Box of 6 homemade chicken nuggets.",
-        "ingredients": "Chicken, Vegetable Oil, Bleached Wheat Flour, Yellow Corn Flour.",
-        "price": 3.0,
-        "icon": "potatoes.png",
-        "cat": "Extras"
+        "name": "Sauced Chicken Wings",
+        "description": "Ayez votre choix de sauce à ailes lancée et en sauce sur votre commande d'ailes croustillantes panées.",
+        "price": 7.9,
+        "icon": "starter-wings2.webp",
+        "cat": "Poulet"
     },
     {
         "id": "3",
-        "name": "Coca",
-        "description": "33cl.",
-        "price": 3.0,
-        "icon": "coca.png",
-        "cat": "Drinks"
+        "name": "Chicken Bites",
+        "description": "Envie de poulet? Prendre une bouchée! Le morceau parfait de poulet juteux, tout blanc, élevé sans utilisation d'antibiotiques et provenant de fermes canadiennes. Et servi avec la sauce de votre choix. Livré par 10 ou 20.",
+        "price": 6.9,
+        "icon": "starter-chicken.webp",
+        "cat": "Poulet"
     },
     {
         "id": "3",
-        "name": "Sprite",
-        "description": "33cl.",
-        "price": 3.0,
-        "icon": "sprite.png",
-        "cat": "Drinks"
+        "name": "Gluten Free Chicken Bites",
+        "description": "Morceaux désossés de viande toute blanche tendre, cuits avec une panure croustillante et sans gluten. Servi avec votre choix de trempette.",
+        "price": 7.9,
+        "icon": "starter-chicken2.webp",
+        "cat": "Poulet"
     },
     {
         "id": "3",
-        "name": "Fanta",
-        "description": "33cl.",
-        "price": 3.0,
-        "icon": "fanta.png",
-        "cat": "Drinks"
+        "name": "Garden Veggie",
+        "description": "Manger vos légumes n'a jamais été aussi bon. Mordez dans le croquant du marché des poivrons verts, des champignons frais, des tomates roma juteuses et de la mozzarella sur une croûte de grains entiers.",
+        "price": 12.9,
+        "icon": "margarita.webp",
+        "cat": "Pizzas"
     },
     {
         "id": "3",
-        "name": "Evian",
-        "description": "33cl.",
-        "price": 3.0,
-        "icon": "evian.png",
-        "cat": "Drinks"
+        "name": "Pesto Amore",
+        "description": "Cette recette inspirée du marché surmonte une croûte croustillante de grains entiers d'épinards frais, de poivrons rouges rôtis au feu, d'oignons rouges, de sauce au pesto au basilic, de fromage de chèvre et de mozzarella. Qu'est-ce qu'il n'y a pas à aimer?",
+        "price": 13.9,
+        "icon": "pesto-amore.webp",
+        "cat": "Pizzas"
+    },
+    {
+        "id": "3",
+        "name": "Grilled Veggie & chèvre",
+        "description": "Prenez une tranche de goût frais et acidulé, avec des courgettes grillées, des poivrons rouges rôtis au feu, des oignons rouges, du fromage de chèvre et du fromage mozzarella. Essayez de le personnaliser avec une croûte mince pour un croquant léger et croquant!",
+        "price": 13.9,
+        "icon": "pizza-grilled.webp",
+        "cat": "Pizzas"
+    },
+    {
+        "id": "3",
+        "name": "Greek",
+        "description": "Cette délicieuse tarte d'inspiration grecque est légendaire, vous emmenant dans une odyssée d'olives kalamata salées, d'épinards frais, d'oignons rouges acidulés et de fromage feta friable.",
+        "price": 15.9,
+        "icon": "pizza-grilled.webp",
+        "cat": "Pizzas"
+    },
+    {
+        "id": "3",
+        "name": "Spicy Tandoori Veggie",
+        "description": "Fait avec une délicieuse sauce tandoori masala et chili vert, oignons rouges, poivrons verts, champignons et garni de flocons de piment et de coriandre.",
+        "price": 16.9,
+        "icon": "pizza-tandoori.webp",
+        "cat": "Pizzas"
     }
+
 ]

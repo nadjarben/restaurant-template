@@ -1,42 +1,20 @@
 [
     {
         "id": "1",
-        "name": "Populars",
-        "icon": "popular.png"
+        "name": "Populaires",
+        "icon": "popular.png",
+        "active": true
     },
     {
         "id": "2",
-        "name": "Menus",
-        "icon": "menu.png"
+        "name": "Poulet",
+        "icon": "starter-wings.webp",
+        "active": false
     },
     {
         "id": "3",
-        "name": "Burgers",
-        "icon": "filet.png"
-    },
-    {
-        "id": "4",
-        "name": "Extra",
-        "icon": "frites.png"
-    },
-    {
-        "id": "5",
-        "name": "Drinks",
-        "icon": "drink.png"
-    },
-    {
-        "id": "5",
-        "name": "Drinks",
-        "icon": "drink.png"
-    },
-    {
-        "id": "5",
-        "name": "Drinks",
-        "icon": "drink.png"
-    },
-    {
-        "id": "5",
-        "name": "Drinks",
-        "icon": "drink.png"
+        "name": "Pizzas",
+        "icon": "margarita.webp",
+        "active": false
     }
 ]

@@ -5,7 +5,6 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import Divider from "@material-ui/core/Divider";
 
 import CardProduct from "../card-product/CardProduct";
@@ -32,15 +31,14 @@ function ModalContact(props) {
     url = "https://amazing-poincare-3f19ef.netlify.app";
   }
 
-  const addProductToCart = () => {
-    const { d, checkout } = props
-    props.setCheckout([...checkout, d])
-    handleClose();
-  }
   return (
     <div>
       <div onClick={handleClickOpen}>
-        <CardProduct title={props.d.name} icon={`${url}/${props.d.icon}`} price={props.d.price} />
+        <CardProduct
+          title={props.d.name}
+          icon={`${url}/${props.d.icon}`}
+          price={props.d.price}
+        />
       </div>
       <Dialog
         open={open}
@@ -62,7 +60,7 @@ function ModalContact(props) {
             justifyContent: "center",
             alignItems: "cent",
             backgroundColor: "#DA291C",
-            color: "#FFC72C",
+            color: "white",
           }}
         >
           <div style={{ position: "absolute", left: "15px", top: "7px" }}>
@@ -92,36 +90,32 @@ function ModalContact(props) {
               height="200px"
             />
           </div>
-          <Divider style={{ marginTop: "3vh", marginBottom: "1vh" }} />
-          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 'auto'}}>
-          <IconButton
-            edge="start"
-            color="inherit"
-            onClick={addProductToCart}
-            aria-label="close"
-          >
-            <AddCircleOutlineIcon fontSize="large" />
-          </IconButton>
-          </div>
 
-          <Divider style={{ marginTop: "1vh", marginBottom: '1vh' }} />
+          <Divider style={{ marginTop: "5vh", marginBottom: "5vh" }} />
 
-          <div style={{ paddingBottom: "20px", paddingLeft: '-1.5vw' }}>
-            <div style={{ display: "flex" }}>
-              <span style={{ fontWeight: "bold" }}>Description:</span>
-              <span style={{ paddingLeft: "8px" }}>{props.d.description}</span>
+          <div style={{ paddingBottom: "20px", paddingLeft: "-1.5vw" }}>
+            <div
+              style={{
+                display: "flex",
+                textAlign: "center",
+                alignContent: "center",
+              }}
+            >
+              {props.d.description}
             </div>
             <br />
-            {props.d.ingredients && (
-              <div style={{ display: "flex" }}>
-                <span style={{ fontWeight: "bold" }}>Ingredient:</span>
-                <span style={{ paddingLeft: "8px" }}>{props.d.ingredients}</span>
-              </div>
-            )}
-            <div style={{ display: "flex", marginTop: '1vh' }}>
-                <span style={{ fontWeight: "bold" }}>Price:</span>
-                <span style={{ paddingLeft: "8px" }}>₪{props.d.price}</span>
-              </div>
+            <div
+              style={{
+                marginTop: "2vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontStyle: "italic",
+                fontWeight: "bold"
+              }}
+            >
+              {props.d.price} €
+            </div>
           </div>
         </DialogContent>
       </Dialog>
@@ -130,3 +124,15 @@ function ModalContact(props) {
 }
 
 export default ModalContact;
+
+//<Divider style={{ marginTop: "3vh", marginBottom: "1vh" }} />
+//<div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 'auto'}}>
+//<IconButton
+// edge="start"
+// color="inherit"
+// onClick={addProductToCart}
+// aria-label="close"
+//>
+//  <AddCircleOutlineIcon fontSize="large" />
+//</IconButton>
+//</div>

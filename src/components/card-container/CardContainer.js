@@ -1,13 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { StyledDiv, TitleCategory } from "./CardContainer.styled";
 
 import ModalProduct from "../modal-product/ModalProduct";
-import CardProduct from "../card-product/CardProduct";
 import CardProductInTotal from "../card-product/CardProductInTotal";
 
-import datas from "../../data.json";
 
-const CardContainer = ({ category, checkout, setCheckout }) => {
+const CardContainer = ({ checkout, setCheckout }) => {
+  const category = useSelector((state) => state.category.category);
+  const products = useSelector((state) => state.product.products);
   const totalPrice = () => {
     let total = 0;
     checkout.map((c, i) => (total = total + c.price));
@@ -20,7 +21,7 @@ const CardContainer = ({ category, checkout, setCheckout }) => {
       <TitleCategory>{category}</TitleCategory>
       <StyledDiv>
         {category !== "Panier"
-          ? datas
+          ? products
               .filter((data) => data.cat.includes(category))
               .map((d, id) => (
                 <ModalProduct
@@ -46,7 +47,7 @@ const CardContainer = ({ category, checkout, setCheckout }) => {
         {category === "Panier" && (
           <div style={{ marginLeft: "2vh" }}>
             <h5 style={{ position: "absolute", bottom: "5px", left: "5px" }}>
-              Total: ₪{totalPrice()}
+              Total: {totalPrice()}€
             </h5>
             <br />
           </div>
