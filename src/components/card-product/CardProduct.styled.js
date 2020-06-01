@@ -7,7 +7,7 @@ export const StyledCard = styled.div`
   text-align: center;
   background-color: white;
   border-radius: 10px;
-  height: 140px;
+  height: 200px;
   position: relative;
   &:hover {
     background-color: #da291c;
@@ -28,6 +28,7 @@ export const StyledCard = styled.div`
   h5 {
     text-align: center;
     margin-top: 15px;
+    font-size: 15px;
     padding-left: 1vw;
     padding-right: 1vw;
   }
