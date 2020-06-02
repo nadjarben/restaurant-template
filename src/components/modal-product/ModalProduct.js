@@ -1,4 +1,7 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from '../../redux/actions/cart.action';
+
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -14,6 +17,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 function ModalContact(props) {
+  const dispatch = useDispatch();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -76,6 +80,7 @@ function ModalContact(props) {
           <DialogTitle id="form-dialog-title">{props.d.name}</DialogTitle>
         </div>
         <DialogContent>
+          <button onClick={()=> dispatch(addItem(props.d))}>add</button>
           <div
             style={{
               display: "flex",

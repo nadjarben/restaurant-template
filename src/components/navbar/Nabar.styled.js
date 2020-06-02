@@ -13,10 +13,18 @@ export const LogoStyled = styled.img`
   transform: translateY(-50%);
 `;
 export const LanguageStyled = styled.div`
-  margin-left: 20px;
   position: absolute;
   right: 30px;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+`;
+export const CheckoutStyled = styled.div`
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+
 `;

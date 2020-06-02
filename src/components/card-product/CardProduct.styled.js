@@ -44,4 +44,7 @@ export const StyledCard = styled.div`
     margin-right: auto;
     width: 100px; /* Need a specific value to work */
   }
+  span {
+    background-color: red;
+  }
 `;
