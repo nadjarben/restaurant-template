@@ -1,6 +1,7 @@
 [
     {
         "id": "1",
+        "category": "Populaires",
         "namefr": "Populaires",
         "nameen": "Populars",
         "icon": "popular.png",
@@ -8,6 +9,7 @@
     },
     {
         "id": "2",
+        "category": "Salades",
         "namefr": "Salades",
         "nameen": "Salads",
         "icon": "salade-cesar.webp",
@@ -15,6 +17,7 @@
     },
     {
         "id": "3",
+        "category": "Pizzas",
         "namefr": "Pizzas",
         "nameen": "Pizzas",
         "icon": "margarita.webp",
@@ -22,6 +25,7 @@
     },
     {
         "id": "4",
+        "category": "Poulet",
         "namefr": "Poulet",
         "nameen": "Chicken",
         "icon": "starter-wings.webp",
@@ -29,6 +33,7 @@
     },
     {
         "id": "5",
+        "category": "Pain",
         "namefr": "Pains",
         "nameen": "Bread",
         "icon": "bread-garlic.webp",
@@ -36,6 +41,7 @@
     },
     {
         "id": "5",
+        "category": "Boissons",
         "namefr": "Boissons",
         "nameen": "Drinks",
         "icon": "boissons.png",

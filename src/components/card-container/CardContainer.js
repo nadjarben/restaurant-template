@@ -9,15 +9,18 @@ const CardContainer = () => {
   const category = useSelector((state) => state.category.category);
   const products = useSelector((state) => state.product.products);
   const cartItems = useSelector((state) => state.cart.cartItems);
-  
+  const lang = useSelector((state) => state.app.lang);
+
+  console.log(category.category)
 
   return (
     <div>
-      <TitleCategory>{category}</TitleCategory>
+      {lang === "fr" && <TitleCategory>{category.namefr}</TitleCategory>}
+      {lang === "en" && <TitleCategory>{category.nameen}</TitleCategory>}
       <StyledDiv>
-        {category !== "Commande"
+        {category.category !== "Commande"
           ? products
-              .filter((data) => data.cat.includes(category))
+              .filter((data) => data.cat.includes(category.category))
               .map((p, id) => (
                 <ModalProduct
                   key={id}

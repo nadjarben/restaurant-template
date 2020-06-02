@@ -3,7 +3,14 @@ import categoriesData from "../../category.json";
 
 
 const initialState = {
-    category: "Populaires",
+    category: {
+      "id": "1",
+      "category": "Populaires",
+      "namefr": "Populaires",
+      "nameen": "Populars",
+      "icon": "popular.png",
+      "active": true
+  },
     categories: categoriesData
 };
 

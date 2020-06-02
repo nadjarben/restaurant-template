@@ -14,7 +14,7 @@ const CategoryContainer = () => {
     <div>
       <ContainerCategory>
         {categories.map((c, id) => (
-          <div key={id} onClick={() => dispatch(changeCategory(c.name))}>
+          <div key={id} onClick={() => dispatch(changeCategory(c))}>
             <CategoryCard c={c} />
             <div style={{ height: "8px" }} />
           </div>
