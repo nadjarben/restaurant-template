@@ -10,7 +10,7 @@ const CategoryCard = ({ checkout }) => {
       <IconButton style={{marginLeft: 'auto'}} edge="start" color="inherit" aria-label="close">
         <ShoppingCartIcon style={{color: '#DA291C'}} fontSize="large" />
       </IconButton>
-      <h5>Panier ({checkout.length})</h5>
+      <h5>Commande ({checkout.length})</h5>
     </StyledCard>
   );
 };

@@ -27,7 +27,7 @@ const Checkout = () => {
     )
 
   return (
-    <div onClick={() => dispatch(changeCategory("Checkout"))}>
+    <div onClick={() => dispatch(changeCategory("Commande"))}>
       <IconButton edge="start" color="inherit" aria-label="close">
         <StyledBadge badgeContent={totalQuantity}></StyledBadge>
         <ShoppingCartIcon style={{ color: "#DA291C", fontSize: "30px" }} />

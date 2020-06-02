@@ -6,7 +6,7 @@
         "active": true
     },
     {
-        "id": "3",
+        "id": "2",
         "name": "Salades",
         "icon": "salade-cesar.webp",
         "active": false
@@ -18,15 +18,21 @@
         "active": false
     },
     {
-        "id": "2",
+        "id": "4",
         "name": "Poulet",
         "icon": "starter-wings.webp",
         "active": false
     },
     {
-        "id": "3",
+        "id": "5",
         "name": "Pains",
         "icon": "bread-garlic.webp",
+        "active": false
+    },
+    {
+        "id": "5",
+        "name": "Boissons",
+        "icon": "boissons.png",
         "active": false
     }
 

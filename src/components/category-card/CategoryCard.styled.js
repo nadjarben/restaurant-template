@@ -1,31 +1,34 @@
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
-position: relative;
-  background-color: #F0F0F0;
+  position: relative;
+  background-color: #f0f0f0;
   border-radius: 15px;
   height: 140px;
-  padding-bottom: 1px;
   &:hover {
-    background-color: #DA291C;
+    background-color: #da291c;
     color: white;
   }
   &:active {
-    background-color: #DA291C;
+    background-color: #da291c;
     color: white;
   }
   &:focus {
-    background-color: #DA291C;
+    background-color: #da291c;
     color: white;
   }
 
   img {
-      margin-top: 8px;
+    margin-top: 8px;
   }
 
-  h5 {
-    bottom: 1px;
-    left: auto;
-    right: auto;
+  .test {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
   }
 `;

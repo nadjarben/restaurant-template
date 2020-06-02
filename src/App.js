@@ -7,7 +7,6 @@ import CardContainer from "./components/card-container/CardContainer";
 
 function App() {
   const [category] = React.useState("Populaires");
-  const [checkout, setCheckout] = React.useState([]);
 
   return (
     <Provider store={store}>
@@ -15,8 +14,6 @@ function App() {
       <div style={{ position: "absolute", left: "10px", marginTop: "0px" }}>
         <CardContainer
           category={category}
-          checkout={checkout}
-          setCheckout={setCheckout}
         />
       </div>
       <div style={{ position: "fixed", right: "27vw" }}>

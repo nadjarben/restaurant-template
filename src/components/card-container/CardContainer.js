@@ -5,7 +5,7 @@ import { StyledDiv, TitleCategory } from "./CardContainer.styled";
 import ModalProduct from "../modal-product/ModalProduct";
 import ModalQuantity from "../modal-quantity/ModalQuantity";
 
-const CardContainer = ({ setCheckout }) => {
+const CardContainer = () => {
   const category = useSelector((state) => state.category.category);
   const products = useSelector((state) => state.product.products);
   const cartItems = useSelector((state) => state.cart.cartItems);
@@ -22,15 +22,13 @@ const CardContainer = ({ setCheckout }) => {
       <TitleCategory>{category}</TitleCategory>
       <p style={{fontWeight: "bold"}}>Prix total : {total.toFixed(2)} €</p>
       <StyledDiv>
-        {category !== "Checkout"
+        {category !== "Commande"
           ? products
               .filter((data) => data.cat.includes(category))
               .map((d, id) => (
                 <ModalProduct
                   key={id}
                   d={d}
-                  checkout={cartItems}
-                  setCheckout={setCheckout}
                 />
               ))
           : 
@@ -41,8 +39,6 @@ const CardContainer = ({ setCheckout }) => {
                   title={d.name}
                   icon={d.icon}
                   price={d.price}
-                  checkout={cartItems}
-                  setCheckout={setCheckout}
                 />
               </div>
             ))}
