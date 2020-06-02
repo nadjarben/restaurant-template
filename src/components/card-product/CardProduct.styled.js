@@ -27,7 +27,7 @@ export const StyledCard = styled.div`
   }
   h5 {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: auto;
     padding-left: 1vw;
     padding-right: 1vw;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerCategory = styled.div`
-top: 12vh;
+top: 15vh;
     bottom:0;
     position:fixed;
     overflow-y:scroll;

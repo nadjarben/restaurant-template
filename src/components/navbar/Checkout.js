@@ -19,10 +19,17 @@ const StyledBadge = withStyles((theme) => ({
 
 const Checkout = () => {
   const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.cartItems);
+
+  let totalQuantity = 0
+    cartItems.map(c => 
+      totalQuantity = c.quantity + totalQuantity
+    )
+
   return (
     <div onClick={() => dispatch(changeCategory("Checkout"))}>
       <IconButton edge="start" color="inherit" aria-label="close">
-        <StyledBadge badgeContent={1}></StyledBadge>
+        <StyledBadge badgeContent={totalQuantity}></StyledBadge>
         <ShoppingCartIcon style={{ color: "#DA291C", fontSize: "30px" }} />
       </IconButton>
     </div>

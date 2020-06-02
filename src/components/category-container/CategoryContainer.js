@@ -26,10 +26,6 @@ const CategoryContainer = () => {
           </div>
         ))}
       </ContainerCategory>
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };

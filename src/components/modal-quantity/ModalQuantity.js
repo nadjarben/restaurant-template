@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addItem } from "../../redux/actions/cart.action";
+import { removeItem, clearItemFromCart } from "../../redux/actions/cart.action";
 
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -8,10 +8,11 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import Divider from "@material-ui/core/Divider";
 
-import CardProduct from "../card-product/CardProduct";
+import CartProductInTotal from "../card-product/CardProductInTotal";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -29,10 +30,10 @@ function ModalContact(props) {
     setOpen(false);
   };
 
-  const addProduct = () => {
-    dispatch(addItem(props.d));
+  const removeFromCart = () => {
+    dispatch(clearItemFromCart(props.d))
     handleClose();
-  };
+  }
 
   let url;
   if (process.env.NODE_ENV === "development") {
@@ -44,10 +45,11 @@ function ModalContact(props) {
   return (
     <div>
       <div onClick={handleClickOpen}>
-        <CardProduct
+        <CartProductInTotal
           title={props.d.name}
           icon={`${url}/${props.d.icon}`}
           price={props.d.price}
+          d={props.d}
         />
       </div>
       <Dialog
@@ -77,8 +79,8 @@ function ModalContact(props) {
             <IconButton
               edge="start"
               color="inherit"
-              onClick={handleClose}
               aria-label="close"
+              onClick={handleClose}
             >
               <CloseIcon />
             </IconButton>
@@ -101,7 +103,7 @@ function ModalContact(props) {
             />
           </div>
 
-          <Divider style={{ marginTop: "0vh", marginBottom: "2vh" }} />
+          <Divider style={{ marginTop: "5vh", marginBottom: "5vh" }} />
 
           <div style={{ paddingBottom: "20px", paddingLeft: "-1.5vw" }}>
             <div
@@ -111,10 +113,7 @@ function ModalContact(props) {
                 alignContent: "center",
               }}
             >
-              {props.d.description}
             </div>
-            <br />
-            <Divider variant="middle" />
             <div
               style={{
                 marginTop: "2vh",
@@ -125,18 +124,31 @@ function ModalContact(props) {
                 fontWeight: "bold",
               }}
             >
-              <span>{props.d.price.toFixed(2)} €</span>
+              <span>{props.d.quantity} x</span>
               <div style={{ marginLeft: "10px" }}>
+              {props.d.quantity === 1 ? (
                 <IconButton
-                  edge="start"
-                  color="inherit"
-                  onClick={addProduct}
-                  aria-label="close"
-                >
-                  <AddCircleOutlineIcon
-                    style={{ color: "#DA291C", fontSize: "35px" }}
-                  />
-                </IconButton>
+                edge="start"
+                color="inherit"
+                aria-label="close"
+                onClick={removeFromCart}
+              >
+                <HighlightOffIcon
+                  style={{ color: "#DA291C", fontSize: "35px" }}
+                />
+              </IconButton>
+              ) : (
+                <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="close"
+                onClick={() => dispatch(removeItem(props.d))}
+              >
+                <RemoveCircleOutlineIcon
+                  style={{ color: "#DA291C", fontSize: "35px" }}
+                />
+              </IconButton>
+              )}
               </div>
             </div>
           </div>
