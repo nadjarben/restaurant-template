@@ -19,7 +19,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-function ModalContact(props) {
+function ModalContact({ci}) {
   const dispatch = useDispatch();
   const [open, setOpen] = React.useState(false);
 
@@ -32,7 +32,7 @@ function ModalContact(props) {
   };
 
   const removeFromCart = () => {
-    dispatch(clearItemFromCart(props.d));
+    dispatch(clearItemFromCart(ci));
     handleClose();
   };
 
@@ -47,10 +47,7 @@ function ModalContact(props) {
     <div>
       <div onClick={handleClickOpen}>
         <CartProductInTotal
-          title={props.d.name}
-          icon={`${url}/${props.d.icon}`}
-          price={props.d.price}
-          d={props.d}
+          ci={ci}
         />
       </div>
       <Dialog
@@ -86,7 +83,7 @@ function ModalContact(props) {
               <CloseIcon />
             </IconButton>
           </div>
-          <DialogTitle id="form-dialog-title">{props.d.name}</DialogTitle>
+          <DialogTitle id="form-dialog-title">{ci.name}</DialogTitle>
         </div>
         <DialogContent>
           <div
@@ -97,8 +94,8 @@ function ModalContact(props) {
             }}
           >
             <img
-              src={`${url}/${props.d.icon}`}
-              alt={props.d.name}
+              src={`${url}/${ci.icon}`}
+              alt={ci.name}
               width="280px"
               height="200px"
             />
@@ -115,7 +112,7 @@ function ModalContact(props) {
                 justifyContent: "center",
               }}
             >
-                {props.d.quantity === 1 ? (
+                {ci.quantity === 1 ? (
                   <div style={{ display: "flex" }}>
                     <IconButton
                       edge="start"
@@ -127,12 +124,12 @@ function ModalContact(props) {
                         style={{ color: "#DA291C", fontSize: "35px" }}
                       />
                     </IconButton>
-                    <div style={{fontStyle:"bold", marginTop: "20px", paddingRight: "14px", fontWeight: "bold"}}>{props.d.quantity} x</div>
+                    <div style={{fontStyle:"bold", marginTop: "20px", paddingRight: "14px", fontWeight: "bold"}}>{ci.quantity} x</div>
                     <IconButton
                         edge="start"
                         color="inherit"
                         aria-label="close"
-                        onClick={() => dispatch(addItem(props.d))}
+                        onClick={() => dispatch(addItem(ci))}
                       >
                         <AddCircleOutlineIcon
                           style={{ color: "#DA291C", fontSize: "36px" }}
@@ -145,18 +142,18 @@ function ModalContact(props) {
                       edge="start"
                       color="inherit"
                       aria-label="close"
-                      onClick={() => dispatch(removeItem(props.d))}
+                      onClick={() => dispatch(removeItem(ci))}
                     >
                       <RemoveCircleOutlineIcon
                         style={{ color: "#DA291C", fontSize: "35px" }}
                       />
                     </IconButton>
-                    <div style={{fontStyle:"bold", marginTop: "20px", paddingRight: "14px", fontWeight: "bold"}}>{props.d.quantity} x</div>
+                    <div style={{fontStyle:"bold", marginTop: "20px", paddingRight: "14px", fontWeight: "bold"}}>{ci.quantity} x</div>
                       <IconButton
                         edge="start"
                         color="inherit"
                         aria-label="close"
-                        onClick={() => dispatch(addItem(props.d))}
+                        onClick={() => dispatch(addItem(ci))}
                       >
                         <AddCircleOutlineIcon
                           style={{ color: "#DA291C", fontSize: "36px" }}

@@ -5,6 +5,14 @@ export const NavbarStyled = styled.header`
   position: relative;
 `;
 
+export const DivTools = styled.div`
+  top: 10px;
+  position: fixed;
+  display: flex;
+  left: 74vw;
+  width: 23vw;
+`;
+
 export const LogoStyled = styled.img`
   margin-left: 20px;
   position: absolute;
@@ -14,17 +22,17 @@ export const LogoStyled = styled.img`
 `;
 export const LanguageStyled = styled.div`
   position: absolute;
-  right: 30px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  right: -12px;;
+  top: 7px;
 `;
 export const CheckoutStyled = styled.div`
   position: absolute;
-  right: 80px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 0;
+`;
 
-
+export const TotalStyled = styled.div`
+  padding-top: 50px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 `;

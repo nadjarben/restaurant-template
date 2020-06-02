@@ -14,16 +14,16 @@ const StyledBadge = withStyles((theme) => ({
 }))(Badge);
 
 
-const CardProductInTotal = ({title, icon, price, checkout, d, setCheckout}) => {
+const CardProductInTotal = ({ci}) => {
   
   return (
     <StyledCard>
-      <img src={icon} alt={icon} width="80%" />
+      <img src={ci.icon} alt={ci.icon} width="80%" />
       <div>
-      <h5>{title}</h5>
-      <p>{price}€</p>
+      <h5>{ci.name}</h5>
+      <p>{ci.price}€</p>
       <div style={{position: "absolute", bottom: 0}}>
-      <StyledBadge badgeContent={d.quantity}></StyledBadge>
+      <StyledBadge badgeContent={ci.quantity}></StyledBadge>
       </div>
       </div>
     </StyledCard>

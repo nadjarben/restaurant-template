@@ -1,37 +1,43 @@
 [
     {
         "id": "1",
-        "name": "Populaires",
+        "namefr": "Populaires",
+        "nameen": "Populars",
         "icon": "popular.png",
         "active": true
     },
     {
         "id": "2",
-        "name": "Salades",
+        "namefr": "Salades",
+        "nameen": "Salads",
         "icon": "salade-cesar.webp",
         "active": false
     },
     {
         "id": "3",
-        "name": "Pizzas",
+        "namefr": "Pizzas",
+        "nameen": "Pizzas",
         "icon": "margarita.webp",
         "active": false
     },
     {
         "id": "4",
-        "name": "Poulet",
+        "namefr": "Poulet",
+        "nameen": "Chicken",
         "icon": "starter-wings.webp",
         "active": false
     },
     {
         "id": "5",
-        "name": "Pains",
+        "namefr": "Pains",
+        "nameen": "Bread",
         "icon": "bread-garlic.webp",
         "active": false
     },
     {
         "id": "5",
-        "name": "Boissons",
+        "namefr": "Boissons",
+        "nameen": "Drinks",
         "icon": "boissons.png",
         "active": false
     }

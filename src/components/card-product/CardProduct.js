@@ -2,13 +2,13 @@ import React from "react";
 import { StyledCard } from "./CardProduct.styled";
 
 
-const CardProduct = ({title, icon, price}) => {
+const CardProduct = ({ p }) => {
   return (
     <StyledCard>
-      <img src={icon} alt={icon} width="80%"  />
+      <img src={p.icon} alt={p.icon} width="80%"  />
       <div>
-      <h5>{title}</h5>
-      <p>{price.toFixed(2)} €</p>
+      <h5>{p.name}</h5>
+      <p>{p.price.toFixed(2)} €</p>
       </div>
     </StyledCard>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../redux/actions/cart.action";
+import { TitleStyled } from "./ModalProduct.styled"
 
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -17,7 +18,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-function ModalContact(props) {
+function ModalContact({ p }) {
   const dispatch = useDispatch();
   const [open, setOpen] = React.useState(false);
 
@@ -30,7 +31,7 @@ function ModalContact(props) {
   };
 
   const addProduct = () => {
-    dispatch(addItem(props.d));
+    dispatch(addItem(p));
     handleClose();
   };
 
@@ -45,9 +46,7 @@ function ModalContact(props) {
     <div>
       <div onClick={handleClickOpen}>
         <CardProduct
-          title={props.d.name}
-          icon={`${url}/${props.d.icon}`}
-          price={props.d.price}
+        p={p}
         />
       </div>
       <Dialog
@@ -73,7 +72,7 @@ function ModalContact(props) {
             color: "white",
           }}
         >
-          <div style={{ position: "absolute", left: "15px", top: "7px" }}>
+          <div style={{ position: "absolute", left: "15px", top: "3px" }}>
             <IconButton
               edge="start"
               color="inherit"
@@ -83,7 +82,7 @@ function ModalContact(props) {
               <CloseIcon />
             </IconButton>
           </div>
-          <DialogTitle id="form-dialog-title">{props.d.name}</DialogTitle>
+          <DialogTitle id="form-dialog-title"><TitleStyled>{p.name}</TitleStyled></DialogTitle>
         </div>
         <DialogContent>
           <div
@@ -94,8 +93,8 @@ function ModalContact(props) {
             }}
           >
             <img
-              src={`${url}/${props.d.icon}`}
-              alt={props.d.name}
+              src={`${url}/${p.icon}`}
+              alt={p.name}
               width="280px"
               height="200px"
             />
@@ -111,7 +110,7 @@ function ModalContact(props) {
                 alignContent: "center",
               }}
             >
-              {props.d.description}
+              {p.description}
             </div>
             <br />
             <Divider variant="middle" />
@@ -125,7 +124,7 @@ function ModalContact(props) {
                 fontWeight: "bold",
               }}
             >
-              <span>{props.d.price.toFixed(2)} €</span>
+              <span>{p.price.toFixed(2)} €</span>
               <div style={{ marginLeft: "10px" }}>
                 <IconButton
                   edge="start"

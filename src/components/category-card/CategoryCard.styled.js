@@ -22,7 +22,7 @@ export const StyledCard = styled.div`
     margin-top: 8px;
   }
 
-  .test {
+  div {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
