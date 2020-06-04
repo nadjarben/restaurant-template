@@ -13,8 +13,8 @@ function App() {
       <Provider store={store}>
         <Router>
           <Switch>
-            <Route exact path="/" component={Menu} />
-            <Route exact path="/menu" component={Homepage} />
+            <Route exact path="/menu" component={Menu} />
+            <Route exact path="/" component={Homepage} />
           </Switch>
         </Router>
       </Provider>

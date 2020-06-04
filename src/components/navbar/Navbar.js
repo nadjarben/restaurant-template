@@ -11,6 +11,7 @@ import {
 import LanguageSwitcher from "./LanguageSwitcher";
 import Checkout from "./Checkout";
 import TotalPrice from "../total-price/TotalPrice";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
 
@@ -18,7 +19,9 @@ const Navbar = () => {
   return (
     <div>
       <NavbarStyled>
-        <LogoStyled src={logo} alt="logo" width="60px" />
+        <Link to="/">
+        <LogoStyled src={logo} alt="logo" width="40px" />
+        </Link>
         <DivTools>
           <CheckoutStyled>
             <Checkout />
