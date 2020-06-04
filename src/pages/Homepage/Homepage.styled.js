@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ForegroundStyled = styled.div`
-  height: 65vh;
+  height: 60vh;
   background-color: black;
   background: rgba(0, 0, 0, 0.55);
   font-family: "Lobster", cursive;
@@ -26,7 +26,7 @@ export const ForegroundStyled = styled.div`
 
 export const DivButtonsStyled = styled.div`
   background-color: black;
-  height: 30vh;
+  height: 35vh;
   opacity: 0.9;
   color: white;
 

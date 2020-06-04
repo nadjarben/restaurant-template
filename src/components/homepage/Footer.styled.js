@@ -4,6 +4,7 @@ export const FooterContainerStyled = styled.div`
   height: 5vh;
   display: flex;
   background-color: black;
+  opacity: 0.5;
   color: white;
   font-size: 11px;
   display: flex;
