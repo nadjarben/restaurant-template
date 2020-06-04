@@ -7,7 +7,6 @@ const CategoryCard = ({ c }) => {
   const lang = useSelector((state) => state.app.lang);
   const category = useSelector((state) => state.category.category.category);
   const styledCardContent = () => {
-    console.log(c.icon);
     return (
       <>
         {c.icon === "popular.png" ? (

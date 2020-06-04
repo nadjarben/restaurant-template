@@ -20,7 +20,7 @@ const Homepage = () => {
   const { t } = useTranslation();
 
   const shareButton = () => {
-    share()
+    share({})
   }
   return (
     <>
