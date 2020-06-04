@@ -6,10 +6,17 @@ export const ForegroundStyled = styled.div`
   background: rgba(0, 0, 0, 0.55);
   font-family: "Lobster", cursive;
 
+  .div-logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
   .language {
     position: absolute;
     right: 10px;
     top: 10px;
+    opacity: 0.8;
   }
   .title {
     color: white;
@@ -25,10 +32,27 @@ export const ForegroundStyled = styled.div`
 `;
 
 export const DivButtonsStyled = styled.div`
-  background-color: black;
-  height: 35vh;
   opacity: 0.9;
+  background-color: black;
   color: white;
+  height: 35vh;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+
+  .descri {
+    font-size: 14px;
+    font-family: "Lobster", cursive;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 5vw 5% 5vw;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   button {
     color: white;
@@ -39,25 +63,5 @@ export const DivButtonsStyled = styled.div`
     background-color: #da291c;
     width: 150px;
   }
-  .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vh;
-  }
 `;
 
-export const LogoContainerStyled = styled.div`
-  position: absolute;
-  top: 10px;
-  left: 10px;
-`;
-
-export const DivExplanation = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 5vh 5vw 0 5vw;
-  font-size: 14px;
-  font-family: "Lobster", cursive;
-`;
