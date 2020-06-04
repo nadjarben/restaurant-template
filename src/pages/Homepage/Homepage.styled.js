@@ -16,8 +16,8 @@ export const ForegroundStyled = styled.div`
     position: absolute;
     right: 10px;
     top: 10px;
-    opacity: 0.8;
   }
+  
   .title {
     color: white;
     opacity: 0.7;

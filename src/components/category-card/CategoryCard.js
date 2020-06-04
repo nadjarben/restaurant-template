@@ -11,7 +11,7 @@ const CategoryCard = ({ c }) => {
       <>
         {c.icon === "popular.png" ? (
           <>
-            {c.icon && <img src={c.icon} alt={c.icon} style={{marginTop: "20px", width: "40px"}} />}
+            {c.icon && <img src={c.icon} alt={c.icon} style={{marginTop: "20px", width: "50px"}} />}
             <div>
               <h5>{c["name" + lang]}</h5>
             </div>
