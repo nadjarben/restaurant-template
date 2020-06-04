@@ -20,9 +20,7 @@ const Homepage = () => {
   const { t } = useTranslation();
 
   const shareButton = () => {
-    share({
-        message: "J'ai mangé dans un super restaurant de pizzas",
-    })
+    share()
   }
   return (
     <>
