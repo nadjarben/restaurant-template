@@ -42,7 +42,7 @@ function ModalContact({ci}) {
   if (process.env.NODE_ENV === "development") {
     url = "http://localhost:3000";
   } else {
-    url = "https://amazing-poincare-3f19ef.netlify.app";
+    url = "https://menu-pizzaitalia.netlify.app";
   }
 
   return (
