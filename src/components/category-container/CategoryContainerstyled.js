@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerCategory = styled.div`
-top: 15vh;
-    bottom:0;
-    position:fixed;
-    overflow-y:scroll;
-    overflow-x:hidden;  width: 25vw;
+  top: 15vh;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 25vw;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
@@ -13,5 +14,5 @@ top: 15vh;
 `;
 
 export const TitleCategory = styled.h3`
-font-size: 15px;
+  font-size: 15px;
 `;

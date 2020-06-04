@@ -7,7 +7,7 @@ const styledCard = css`
 `;
 
 const invertedStyledCard = css`
-  background-color: #b0a7a7;
+  background-color: #F0F0F0;
   color: black;
 `;
 
@@ -47,3 +47,5 @@ export const StyledCard = styled.div`
   }
   ${getCardStyles}
 `;
+
+//#b0a7a7
