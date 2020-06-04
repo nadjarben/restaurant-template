@@ -1,7 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/actions/cart.action";
-import { TitleStyled } from "./ModalProduct.styled"
+import { TitleStyled, ImgStyled } from "./ModalProduct.styled"
 
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -20,6 +20,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 function ModalContact({ p }) {
   const dispatch = useDispatch();
+  const lang = useSelector((state) => state.app.lang);
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -43,7 +44,7 @@ function ModalContact({ p }) {
   }
 
   return (
-    <div>
+    <>
       <div onClick={handleClickOpen}>
         <CardProduct
         p={p}
@@ -82,7 +83,7 @@ function ModalContact({ p }) {
               <CloseIcon />
             </IconButton>
           </div>
-          <DialogTitle id="form-dialog-title"><TitleStyled>{p.name}</TitleStyled></DialogTitle>
+          <DialogTitle id="form-dialog-title"><TitleStyled>{p["name" + lang]}</TitleStyled></DialogTitle>
         </div>
         <DialogContent>
           <div
@@ -92,11 +93,10 @@ function ModalContact({ p }) {
               alignItems: "center",
             }}
           >
-            <img
+            <ImgStyled
+              className="modal-img"
               src={`${url}/${p.icon}`}
               alt={p.name}
-              width="280px"
-              height="200px"
             />
           </div>
 
@@ -110,7 +110,7 @@ function ModalContact({ p }) {
                 alignContent: "center",
               }}
             >
-              {p.description}
+              {p["description" + lang]}
             </div>
             <br />
             <Divider variant="middle" />
@@ -141,7 +141,7 @@ function ModalContact({ p }) {
           </div>
         </DialogContent>
       </Dialog>
-    </div>
+    </>
   );
 }
 

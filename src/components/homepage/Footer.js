@@ -6,9 +6,8 @@ const Footer = () => {
     return (
         <FooterContainerStyled>
             <a href="https://digiscards.com/sidewalk">
-           <p>A product</p>
            <img src={logo} alt="Sidewalk Medias"/>   
-           <p>Medias and marketing agency</p>
+           Medias and marketing agency©
            </a>
         </FooterContainerStyled>
     )

@@ -9,6 +9,10 @@ export const StyledCard = styled.div`
   border-radius: 10px;
   height: 200px;
   position: relative;
+  @media (min-width: 600px) {
+    height: 250px;
+    font-size: 25px;
+  }
   &:hover {
     background-color: #da291c;
     color: white;
@@ -24,6 +28,10 @@ export const StyledCard = styled.div`
 
   img {
     margin-top: 5px;
+    width: 80%;
+    @media (min-width: 600px) {
+    width: 30%;
+  }
   }
   h5 {
     text-align: center;

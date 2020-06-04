@@ -7,12 +7,24 @@ const CategoryCard = ({ c }) => {
   const lang = useSelector((state) => state.app.lang);
   const category = useSelector((state) => state.category.category.category);
   const styledCardContent = () => {
+    console.log(c.icon);
     return (
       <>
-        {c.icon && <img src={c.icon} alt={c.icon} width="70%" />}
-        <div>
-          <h5>{c["name" + lang]}</h5>
-        </div>
+        {c.icon === "popular.png" ? (
+          <>
+            {c.icon && <img src={c.icon} alt={c.icon} style={{marginTop: "20px", width: "40px"}} />}
+            <div>
+              <h5>{c["name" + lang]}</h5>
+            </div>
+          </>
+        ) : (
+          <>
+            {c.icon && <img src={c.icon} alt={c.icon} />}
+            <div>
+              <h5>{c["name" + lang]}</h5>
+            </div>
+          </>
+        )}
       </>
     );
   };

@@ -4,11 +4,23 @@ export const ForegroundStyled = styled.div`
   height: 65vh;
   background-color: black;
   background: rgba(0, 0, 0, 0.55);
+  font-family: "Lobster", cursive;
 
   .language {
-      position: absolute;
-      right: 10px;
-      top: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .title {
+    color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 7vh;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
   }
 `;
 
@@ -28,13 +40,10 @@ export const DivButtonsStyled = styled.div`
     width: 150px;
   }
   .buttons {
-    position: absolute;
-    justify-content: space-between;
     display: flex;
-    bottom: 4%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
   }
 `;
 
@@ -50,4 +59,5 @@ export const DivExplanation = styled.div`
   text-align: center;
   padding: 5vh 5vw 0 5vw;
   font-size: 14px;
+  font-family: "Lobster", cursive;
 `;

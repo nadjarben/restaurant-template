@@ -24,8 +24,16 @@ export const StyledCard = styled.div`
   color: white;
   border-radius: 15px;
   height: 140px;
+  @media (min-width: 600px) {
+    height: 150px;
+    font-size: 25px;
+  }
   img {
     margin-top: 8px;
+    width: 70%;
+    @media (min-width: 600px) {
+    width: 20%;
+  }
   }
 
   div {
@@ -34,7 +42,7 @@ export const StyledCard = styled.div`
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     text-align: center;
   }
   ${getCardStyles}

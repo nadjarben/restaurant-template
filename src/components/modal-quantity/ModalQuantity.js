@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { removeItem, clearItemFromCart, addItem } from "../../redux/actions/cart.action";
 
 import Dialog from "@material-ui/core/Dialog";
@@ -12,6 +12,7 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import Divider from "@material-ui/core/Divider";
+import { TitleStyled, ImgStyled } from "./ModalQuantity.styled"
 
 import CartProductInTotal from "../card-product/CardProductInTotal";
 
@@ -21,6 +22,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 function ModalContact({ci}) {
   const dispatch = useDispatch();
+  const lang = useSelector((state) => state.app.lang);
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -83,7 +85,7 @@ function ModalContact({ci}) {
               <CloseIcon />
             </IconButton>
           </div>
-          <DialogTitle id="form-dialog-title">{ci.name}</DialogTitle>
+          <DialogTitle id="form-dialog-title"><TitleStyled>{ci["name" + lang]}</TitleStyled></DialogTitle>
         </div>
         <DialogContent>
           <div
@@ -93,7 +95,7 @@ function ModalContact({ci}) {
               alignItems: "center",
             }}
           >
-            <img
+            <ImgStyled
               src={`${url}/${ci.icon}`}
               alt={ci.name}
               width="280px"
@@ -132,7 +134,7 @@ function ModalContact({ci}) {
                         onClick={() => dispatch(addItem(ci))}
                       >
                         <AddCircleOutlineIcon
-                          style={{ color: "#DA291C", fontSize: "36px" }}
+                          style={{ color: "#DA291C", fontSize: "35px" }}
                         />
                       </IconButton>
                   </div>
@@ -156,7 +158,7 @@ function ModalContact({ci}) {
                         onClick={() => dispatch(addItem(ci))}
                       >
                         <AddCircleOutlineIcon
-                          style={{ color: "#DA291C", fontSize: "36px" }}
+                          style={{ color: "#DA291C", fontSize: "35px" }}
                         />
                       </IconButton>
                   </div>
