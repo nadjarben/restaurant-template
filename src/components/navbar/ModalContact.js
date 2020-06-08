@@ -66,13 +66,13 @@ function ModalContact() {
   return (
     <div>
       <IconButton
-        style={{ marginLeft: "auto" }}
+      style={{marginLeft: "20px"}}
         edge="start"
         color="inherit"
         aria-label="close"
         onClick={handleClickOpen}
       >
-        <ContactMailIcon style={{ color: "#DA291C" }} fontSize="large" />
+        <ContactMailIcon style={{ color: "#DA291C", opacity: 0.3 }} fontSize="large" />
       </IconButton>{" "}
       <Dialog
         open={toggle}
