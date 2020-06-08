@@ -9,3 +9,5 @@ export const DOMAIN =
     : process.env.REACT_APP_DOMAIN_PROD;
 
 export const APP_NAME = process.env.REACT_APP_NAME;
+
+export const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;

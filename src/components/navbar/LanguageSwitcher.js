@@ -72,7 +72,7 @@ const LocaleSwitcher = ({ t, lang }) => {
     }
    
     return (
-      <>
+      <div>
       <Button
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -91,7 +91,6 @@ const LocaleSwitcher = ({ t, lang }) => {
         { i18n.language === 'he' && (
             <img src={flagen} alt="flagen" width="25px" />
         )}
-       
       </Button>
       <StyledMenu
         id="customized-menu"
@@ -101,7 +100,7 @@ const LocaleSwitcher = ({ t, lang }) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <>
+        <div>
           <ListItem className={classes.div}>
           <div onClick={() => changeLanguage('en')} className={classes.flexdiv} >
               <img src={flagen} alt="flagen" width="30px" height="30px" />
@@ -115,9 +114,9 @@ const LocaleSwitcher = ({ t, lang }) => {
                 <p style={{marginLeft: "10px", marginTop: "0px"}}>Français</p>
             </div>
           </ListItem>
-        </>
+        </div>
         </StyledMenu>  
-      </> 
+      </div> 
       )
 };
 export default LocaleSwitcher;

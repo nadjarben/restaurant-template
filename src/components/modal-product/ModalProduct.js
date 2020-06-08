@@ -37,8 +37,6 @@ function ModalContact({ p }) {
     handleClose();
   };
 
-  console.log(DOMAIN)
-
   return (
     <>
       <div onClick={handleClickOpen}>

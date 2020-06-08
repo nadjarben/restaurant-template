@@ -6,6 +6,8 @@ import LanguageSwitcher from "../../components/navbar/LanguageSwitcher";
 import Footer from "../../components/homepage/Footer";
 import logo from "../../assets/logo.png";
 
+import { SENDGRID_API_KEY } from "../../utils/environment"
+
 import { Link } from "react-router-dom";
 
 import {
@@ -22,6 +24,8 @@ const Homepage = () => {
       message: "J'ai mangé dans un super restaurant de pizzas",
     });
   };
+
+  console.log(SENDGRID_API_KEY)
   return (
     <>
       <ForegroundStyled>
