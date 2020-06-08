@@ -1,4 +1,5 @@
 import React from "react";
+import { DOMAIN } from "../../utils/environment"
 import { useDispatch, useSelector } from "react-redux";
 import { removeItem, clearItemFromCart, addItem } from "../../redux/actions/cart.action";
 
@@ -38,12 +39,6 @@ function ModalContact({ci}) {
     handleClose();
   };
 
-  let url;
-  if (process.env.NODE_ENV === "development") {
-    url = "http://localhost:3000";
-  } else {
-    url = "https://menu-pizzaitalia.netlify.app";
-  }
 
   return (
     <div>
@@ -96,7 +91,7 @@ function ModalContact({ci}) {
             }}
           >
             <ImgStyled
-              src={`${url}/${ci.icon}`}
+              src={`${DOMAIN}/${ci.icon}`}
               alt={ci.name}
               width="280px"
               height="200px"

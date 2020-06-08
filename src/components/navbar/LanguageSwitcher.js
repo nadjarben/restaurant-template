@@ -13,8 +13,7 @@ import ListItem from '@material-ui/core/ListItem';
 const StyledMenu = withStyles({
   paper: {
     border: '1px solid #d3d4d5',
-    backgroundColor: 'white',
-    width: '150px'
+    width: '150px',
   },
 })(props => (
   <Menu
@@ -35,12 +34,11 @@ const StyledMenu = withStyles({
 
 const useStyles = makeStyles(theme => ({
   flexdiv: {
-    paddingTop: "5px",
     display: "flex",
   },
   flexdiv2: {
     display: "flex",
-    marginTop: "10px"
+    marginTop: "10px",
   },
   div: {
     display: "flex",
@@ -50,7 +48,6 @@ const useStyles = makeStyles(theme => ({
    },
    textLang: {
      paddingLeft: "50px !important",
-     marginTop: "-40px"
    }
   }
 }));
@@ -75,7 +72,7 @@ const LocaleSwitcher = ({ t, lang }) => {
     }
    
     return (
-      <div>
+      <>
       <Button
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -104,7 +101,7 @@ const LocaleSwitcher = ({ t, lang }) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <div>
+        <>
           <ListItem className={classes.div}>
           <div onClick={() => changeLanguage('en')} className={classes.flexdiv} >
               <img src={flagen} alt="flagen" width="30px" height="30px" />
@@ -118,9 +115,9 @@ const LocaleSwitcher = ({ t, lang }) => {
                 <p style={{marginLeft: "10px", marginTop: "0px"}}>Français</p>
             </div>
           </ListItem>
-        </div>
+        </>
         </StyledMenu>  
-      </div> 
+      </> 
       )
 };
 export default LocaleSwitcher;

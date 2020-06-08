@@ -55,6 +55,7 @@ export const DivButtonsStyled = styled.div`
   }
 
   button {
+    cursor: pointer;
     color: white;
     font-weight: bold;
     border-color: black;

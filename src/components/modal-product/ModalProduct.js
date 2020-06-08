@@ -1,4 +1,5 @@
 import React from "react";
+import { DOMAIN } from "../../utils/environment"
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../redux/actions/cart.action";
 import { TitleStyled, ImgStyled } from "./ModalProduct.styled"
@@ -36,12 +37,7 @@ function ModalContact({ p }) {
     handleClose();
   };
 
-  let url;
-  if (process.env.NODE_ENV === "development") {
-    url = "http://localhost:3000";
-  } else {
-    url = "https://menu-pizzaitalia.netlify.app";
-  }
+  console.log(DOMAIN)
 
   return (
     <>
@@ -95,7 +91,7 @@ function ModalContact({ p }) {
           >
             <ImgStyled
               className="modal-img"
-              src={`${url}/${p.icon}`}
+              src={`${DOMAIN}/${p.icon}`}
               alt={p.name}
             />
           </div>

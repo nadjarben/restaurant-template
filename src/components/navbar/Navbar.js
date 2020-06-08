@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   NavbarStyled,
   LogoStyled,
@@ -11,7 +12,7 @@ import {
 import LanguageSwitcher from "./LanguageSwitcher";
 import Checkout from "./Checkout";
 import TotalPrice from "../total-price/TotalPrice";
-import { Link } from "react-router-dom";
+import ModalContact from "./ModalContact";
 
 import logo from "../../assets/logo.png";
 
@@ -22,6 +23,9 @@ const Navbar = () => {
         <Link to="/">
         <LogoStyled src={logo} alt="logo" width="40px" />
         </Link>
+        <div style={{marginLeft: "15vw", paddingTop: "2vh"}}>
+        <ModalContact />
+        </div>
         <DivTools>
           <CheckoutStyled>
             <Checkout />
