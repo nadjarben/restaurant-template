@@ -44,7 +44,7 @@ function ModalContact() {
   };
 
   const isFulfil = () => {
-    if (form.name !== "" && form.mail !== "") {
+    if (form.name !== "" && form.mail !== "" && form.message !== "") {
       setIsEmpty(false);
       console.log(isEmpty);
     }
