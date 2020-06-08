@@ -1,4 +1,6 @@
 import React from "react";
+import { API } from "../../utils/environment";
+import axios from "axios";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Button from "@material-ui/core/Button";
@@ -20,8 +22,8 @@ function ModalContact() {
   const [open, setOpen] = React.useState(false);
   const [isEmpty, setIsEmpty] = React.useState(true);
   const [form, setForm] = React.useState({
-    name: "",
-    email: "",
+    name: "name",
+    mail: "",
     phone: "",
     message: "",
   });
@@ -34,30 +36,33 @@ function ModalContact() {
     setOpen(false);
     setForm({
       ...form,
-      sent: false,
-      error: false,
-      success: false,
       name: "",
       phone: "",
-      email: "",
+      mail: "",
       message: "",
     });
   };
 
   const isFulfil = () => {
-    if (form.name !== "" && form.email !== "") {
+    if (form.name !== "" && form.mail !== "") {
       setIsEmpty(false);
       console.log(isEmpty);
     }
   };
 
   const handleChange = (name) => (e) => {
-    setForm({ ...form, [name]: e.target.value, error: false, success: false });
+    setForm({ ...form, [name]: e.target.value });
     isFulfil();
   };
 
   const submitForm = (e) => {
-    console.log(form);
+    const { name, phone, mail, message } = form;
+    axios
+      .post(`${API}/sendEmail`, { name, phone, mail, message })
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+      });
   };
 
   return (
@@ -99,12 +104,12 @@ function ModalContact() {
               />
               <TextField
                 margin="dense"
-                id="email"
+                id="mail"
                 label="Email"
                 type="email"
                 fullWidth
                 required
-                onChange={handleChange("email")}
+                onChange={handleChange("mail")}
               />
               <TextField
                 margin="dense"
@@ -124,7 +129,7 @@ function ModalContact() {
                 fullWidth
                 onChange={handleChange("message")}
               />
-              <DialogActions style={{marginTop: "5vh"}}>
+              <DialogActions style={{ marginTop: "5vh" }}>
                 <Button onClick={handleClose} color="primary">
                   Close
                 </Button>
