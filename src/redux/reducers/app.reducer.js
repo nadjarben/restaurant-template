@@ -1,8 +1,9 @@
-import { GET_LANGUAGE } from "../actions/types";
+import { GET_LANGUAGE, TOGGLE_CONTACT, TOGGLE_CONTACT_CLOSE } from "../actions/types";
 
 
 const initialState = {
-    lang: ""
+    lang: "",
+    modalContact: false
 };
 
 export default function (state = initialState, action) {
@@ -12,6 +13,18 @@ export default function (state = initialState, action) {
           ...state, 
           lang: action.payload
         }
+    case TOGGLE_CONTACT: {
+        return {
+          ...state,
+          modalContact: true
+        }
+    }
+    case TOGGLE_CONTACT_CLOSE: {
+      return {
+        ...state,
+        modalContact: false
+      }
+  }
     default:
       return state;
   }

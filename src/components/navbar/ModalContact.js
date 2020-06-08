@@ -1,5 +1,7 @@
 import React from "react";
 import { API } from "../../utils/environment";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleContact, toggleContactClose } from "../../redux/actions/app.action"
 import axios from "axios";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -17,36 +19,29 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 function ModalContact() {
+  const dispatch = useDispatch();
+  const toggle = useSelector((state) => state.app.modalContact);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
-  const [open, setOpen] = React.useState(false);
   const [isEmpty, setIsEmpty] = React.useState(true);
   const [form, setForm] = React.useState({
-    name: "name",
+    name: "",
     mail: "",
     phone: "",
     message: "",
   });
 
   const handleClickOpen = () => {
-    setOpen(true);
+    dispatch(toggleContact())
   };
 
   const handleClose = () => {
-    setOpen(false);
-    setForm({
-      ...form,
-      name: "",
-      phone: "",
-      mail: "",
-      message: "",
-    });
+    dispatch(toggleContactClose())
   };
 
   const isFulfil = () => {
     if (form.name !== "" && form.mail !== "" && form.message !== "") {
       setIsEmpty(false);
-      console.log(isEmpty);
     }
   };
 
@@ -62,7 +57,10 @@ function ModalContact() {
       .then((res) => {
         console.log(res);
         console.log(res.data);
-      });
+      })
+      setTimeout(() => {
+        handleClose()
+      }, 2000);
   };
 
   return (
@@ -77,7 +75,7 @@ function ModalContact() {
         <ContactMailIcon style={{ color: "#DA291C" }} fontSize="large" />
       </IconButton>{" "}
       <Dialog
-        open={open}
+        open={toggle}
         fullScreen={fullScreen}
         onClose={handleClose}
         TransitionComponent={Transition}
@@ -90,7 +88,7 @@ function ModalContact() {
         }}
       >
         <div style={{ opacity: "none" }}>
-          <DialogTitle id="form-dialog-title">Contact Us</DialogTitle>
+          <DialogTitle id="form-dialog-title">Are you interested ?</DialogTitle>
           <DialogContent>
             <div>
               <TextField

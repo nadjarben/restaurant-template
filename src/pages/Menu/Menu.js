@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from 'react-i18next'
 import { useDispatch } from "react-redux";
-import { getLanguage } from "../../redux/actions/app.action";
+import { getLanguage, timeoutToggleContact } from "../../redux/actions/app.action";
 import Navbar from "../../components/navbar/Navbar";
 import CategoryContainer from "../../components/category-container/CategoryContainer";
 import CardContainer from "../../components/card-container/CardContainer";
@@ -15,6 +15,7 @@ const Menu = () => {
 
   React.useEffect(() => {
     dispatch(getLanguage(lang))
+    dispatch(timeoutToggleContact())
   }, [lang, dispatch]);
 
   return (
